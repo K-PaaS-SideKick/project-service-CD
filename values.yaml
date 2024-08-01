@@ -79,13 +79,13 @@ livenessProbe:
   httpGet:
     path: /
     port: 8081
-  initalDelaySeconds: 30
+  initalDelaySeconds: 60
   periodSeconds: 10
 readinessProbe:
   httpGet:
     path: /
     port: 8081
-  initialDelaySeconds: 30
+  initialDelaySeconds: 60
   periodSeconds: 10
 
 autoscaling:
