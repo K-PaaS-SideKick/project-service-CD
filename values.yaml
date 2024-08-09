@@ -78,13 +78,13 @@ resources:
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /project
     port: 8081
   initalDelaySeconds: 60
   periodSeconds: 10
 readinessProbe:
   httpGet:
-    path: /
+    path: /project
     port: 8081
   initialDelaySeconds: 60
   periodSeconds: 10
