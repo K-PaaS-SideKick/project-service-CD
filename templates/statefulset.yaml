@@ -40,6 +40,12 @@ spec:
             - name: http
               containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
+          env:
+            - name: VAULT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: vault-key-secret
+                  key: VAULT_SECRET
           livenessProbe:
             {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
