@@ -8,7 +8,7 @@ image:
   repository: sangwookie/sidekick-project-service
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 5107688be977433d2002195ce27f21c8bf433c98
+  tag: 5107688
 
 imagePullSecrets: []
 nameOverride: ""
